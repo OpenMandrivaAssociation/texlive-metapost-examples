@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/metapost/examples
+# catalog-date 2008-04-20 19:53:04 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-metapost-examples
 Version:	20080420
 Release:	1
@@ -28,6 +34,7 @@ bitmap, etc).
 %doc %{_texmfdistdir}/doc/metapost/metapost-examples/data3
 %doc %{_texmfdistdir}/doc/metapost/metapost-examples/examples.mp
 %doc %{_texmfdistdir}/doc/metapost/metapost-examples/mp2html.pl
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -38,3 +45,5 @@ bitmap, etc).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
