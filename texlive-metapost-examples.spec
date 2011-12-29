@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 These are a few (hundred) example pictures drawn with MetaPost,
@@ -34,7 +32,6 @@ bitmap, etc).
 %doc %{_texmfdistdir}/doc/metapost/metapost-examples/data3
 %doc %{_texmfdistdir}/doc/metapost/metapost-examples/examples.mp
 %doc %{_texmfdistdir}/doc/metapost/metapost-examples/mp2html.pl
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,5 +42,3 @@ bitmap, etc).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
