@@ -5,8 +5,8 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-metapost-examples
-Version:	20080420
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Example drawings using MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/metapost/examples
