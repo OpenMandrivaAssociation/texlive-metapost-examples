@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/metapost/examples
-# catalog-date 2008-04-20 19:53:04 +0200
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-metapost-examples
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Example drawings using MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/metapost/examples
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -35,24 +29,10 @@ bitmap, etc).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080420-2
-+ Revision: 753916
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080420-1
-+ Revision: 719001
-- texlive-metapost-examples
-- texlive-metapost-examples
-- texlive-metapost-examples
-- texlive-metapost-examples
-
