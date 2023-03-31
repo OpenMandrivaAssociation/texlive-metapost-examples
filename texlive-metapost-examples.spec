@@ -1,6 +1,6 @@
 Name:		texlive-metapost-examples
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Example drawings using MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/metapost/examples
