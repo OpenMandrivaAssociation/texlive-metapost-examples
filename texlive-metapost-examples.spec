@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Example drawings using MetaPost
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/metapost/examples
+URL:		https://www.ctan.org/tex-archive/info/metapost/examples
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost-examples.doc.r%{version}.tar.xz
